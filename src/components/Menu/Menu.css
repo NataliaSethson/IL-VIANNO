@@ -1,0 +1,37 @@
+.menuItem{
+    text-align: center;
+    justify-content: center;
+}
+
+.menuName{
+    margin: 30px 20px 30px 20px;
+    font-size:30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+.imgMenu{
+    max-width: 300px;
+    height: 200px;
+}
+
+.menuDescription{
+    margin: 20px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+@media (max-width: 580px ){
+    .imgMenu{
+        max-width: 100%;
+        margin: 5px;
+    }
+}
+
+
+@media (max-width: 250px ){
+    .imgMenu{
+        max-width: 100%;
+        margin: 3px;
+    }
+}

@@ -1,0 +1,62 @@
+
+.textInicio{
+    text-align: center;
+    margin: 150px 30px 100px 30px;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 40px;
+    
+}
+
+.descubriInicio{
+    text-align: center;
+    margin: 150px 30px 100px 30px;
+    font-size: 35px;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    
+}
+.imgInicio{
+    max-width: 100%;
+}
+
+@media (max-width: 768px){
+    .imgInicio{
+        max-width: 100%;
+    }
+    .textInicio{
+        margin: 5px;
+    }
+    .descubriInicio{
+        margin: 5px;
+    }
+}
+
+@media (max-width: 500px){
+    .imgInicio{
+        max-width: 100%;
+    }
+    .textInicio{
+        font-size: 23px;
+        margin: 3px;
+    }
+    .descubriInicio{
+        font-size: 20px;
+        margin: 3px;
+    }
+}
+@media (max-width: 200px){
+    .imgInicio{
+        max-width: 100%;
+        
+    }
+    .textInicio{
+        font-size: 15px;
+        margin: 5px;
+    }
+    .descubriInicio{
+        font-size: 16px;
+        margin: 10px;
+    }
+}

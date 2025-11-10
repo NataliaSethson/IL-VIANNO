@@ -1,0 +1,212 @@
+.navConteiner {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.titleCont {
+    font-size: 150px;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.barraNav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.menu-item.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-item .menu-link {
+    padding: 10px;
+}
+
+/* --- Submenú normal (pantallas grandes) --- */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    margin-top: 5px;
+    min-width: 140px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 7;
+    padding: 6px 0;
+    transition: all 0.2s ease;
+}
+
+.dropdown-menu li a {
+    display: block;
+    margin: 0;
+    padding: 6px 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f7f7f7;
+}
+
+/* ---------- TABLETS ---------- */
+@media (max-width: 768px) {
+    .navConteiner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titleCont {
+        font-size: 120px;
+        text-align: center;
+    }
+
+    .barraNav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        box-shadow: none;
+    }
+}
+
+/* ---------- CELULARES GRANDES ---------- */
+@media (max-width: 580px) {
+    .navConteiner {
+        max-width: 100%;
+        font-size: 15px;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .titleCont {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .barraNav ul {
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    /* 👇 Submenú compacto y ajustado al texto */
+    .dropdown-menu {
+        position: relative;
+        display: inline-block;
+        background: white;
+        border-radius: 6px;
+        box-shadow: none;
+        padding: 2px 0;
+        margin: 4px auto;
+        width: auto;           /* 👈 solo ocupa el ancho del texto */
+        min-width: unset;
+        text-align: left;
+    }
+
+    .dropdown-menu li {
+        display: block;         /* 👈 ítems uno debajo del otro */
+    }
+
+    .dropdown-menu li a {
+        font-size: 9px;
+        padding: 3px 8px;
+        line-height: 1.4;
+    }
+}
+
+/* ---------- CELULARES CHICOS ---------- */
+@media (max-width: 400px) {
+    .titleCont {
+        font-size: 45px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .navConteiner {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .barraNav ul {
+        align-items: center;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        display: inline-block;
+        background: white;
+        border-radius: 4px;
+        box-shadow: none;
+        padding: 2px 0;
+        width: auto;
+        min-width: unset;
+        text-align: left;
+    }
+
+    .dropdown-menu li a {
+        font-size: 7px;
+        padding: 2px 6px;
+    }
+}
+
+/* ---------- MUY PEQUEÑAS ---------- */
+@media (max-width: 220px) {
+    .titleCont {
+        font-size: 39px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .navConteiner {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .barraNav ul {
+        align-items: center;
+    }
+
+    .dropdown-menu {
+        display: inline-block;
+        width: auto;
+        min-width: unset;
+        padding: 1px 0;
+    }
+
+    .dropdown-menu li a {
+        font-size: 6px;
+        padding: 1px 4px;
+    }
+}
+

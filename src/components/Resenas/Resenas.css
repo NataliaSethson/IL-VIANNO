@@ -1,0 +1,59 @@
+.conteinerResenas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important; 
+  justify-items: center; 
+  gap: 30px;
+  align-items: center; 
+  text-align: center;
+  margin: 50px 10px 50px 10px;
+}
+
+
+.titleReserv{
+  text-align: center;
+  font-size: 30px !important;
+  margin-top: 100px !important;
+  font-weight: lighter !important;
+  margin-bottom: 90px !important;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+ 
+}
+
+@media (max-width: 1300px ){
+  .conteinerResenas{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important; 
+    max-width: 100%;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 650px ){
+  .conteinerResenas{
+    display: grid;
+    grid-template-columns:  1fr !important; 
+    max-width: 100% !important;
+    margin: 10px !important;
+    font-size: 20px !important;
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 200px ){
+  .conteinerResenas{
+    display: grid;
+    grid-template-columns:  1fr !important; 
+    max-width: 70% !important;
+    margin: 10px !important;
+    font-size: 8px !important;
+    gap: 10px !important;
+  }
+
+  .titleReserv{
+    font-size: 15px !important;
+    margin: 30px 5px 30px 5px !important;
+    font-weight: lighter !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  }
+}
